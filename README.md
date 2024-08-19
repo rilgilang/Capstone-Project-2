@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project is part of my learning journey in data analysis using Google Colab. The objective of this project is to analyze transaction data from Transjakarta, a public transportation system in Jakarta, Indonesia. Through this analysis, I aimed to uncover insights about customer behavior, route efficiency, and transaction patterns.
+This project is about data analysis using Google Colab. The objective of this project is to analyze transaction data from Transjakarta, a public transportation system in Jakarta, Indonesia. Through this analysis, I aimed to uncover insights about customer behavior, route efficiency, and transaction patterns.
 
 ## Dataset
 
