@@ -1,66 +1,58 @@
-# Transjakarta Public Transportation Data Analysis
+# Analisis Data Pelanggan Supermarket
 
-## Project Overview
+Proyek ini merupakan analisis mendalam terhadap data pelanggan dari sebuah supermarket, bertujuan untuk memahami pola perilaku pelanggan, preferensi produk, dan strategi pemasaran yang efektif.
 
-This project is about data analysis using Google Colab. The objective of this project is to analyze transaction data from Transjakarta, a public transportation system in Jakarta, Indonesia. Through this analysis, I aimed to uncover insights about customer behavior, route efficiency, and transaction patterns.
+## Latar Belakang
 
-## Dataset
+Supermarket saat ini menghadapi persaingan yang ketat dalam menarik dan mempertahankan pelanggan. Untuk mencapai keunggulan kompetitif, penting bagi perusahaan untuk memahami demografi dan perilaku pembelian pelanggan. Dengan analisis data yang tepat, perusahaan dapat mengidentifikasi segmen pelanggan yang potensial, preferensi produk, dan mengembangkan strategi pemasaran yang lebih efektif.
 
-The dataset consists of transaction records with the following structure:
-- **transID**: Unique transaction ID.
-- **payCardID**: Customer's main identifier (ticket card ID).
-- **payCardBank**: Bank issuer of the customer's card.
-- **payCardName**: Customer's name as embedded on the card.
-- **payCardSex**: Customer's gender.
-- **payCardBirthDate**: Customer's birth year.
-- **corridorID**: Corridor or route ID.
-- **corridorName**: Name of the corridor or route.
-- **direction**: Route direction (0 for Go, 1 for Back).
-- **tapInStops**: ID of the stop where the customer tapped in.
-- **tapInStopsName**: Name of the stop where the customer tapped in.
-- **tapInStopsLat**: Latitude of the tap-in stop.
-- **tapInStopsLon**: Longitude of the tap-in stop.
-- **stopStartSeq**: Sequence of the stops related to direction.
-- **tapInTime**: Date and time of tap-in.
-- **tapOutStops**: ID of the stop where the customer tapped out.
-- **tapOutStopsName**: Name of the stop where the customer tapped out.
-- **tapOutStopsLat**: Latitude of the tap-out stop.
-- **tapOutStopsLon**: Longitude of the tap-out stop.
-- **stopEndSeq**: Sequence of the stops related to direction.
-- **tapOutTime**: Date and time of tap-out.
-- **payAmount**: Amount paid by the customer.
+## Rumusan Masalah
 
-The dataset can be accessed [here](https://drive.google.com/drive/folders/1S04hk5uHfHYe6J1S6fVqDunuja1Lk1Lo?usp=sharing).
+1. Bagaimana distribusi usia dan pendapatan mempengaruhi pola pembelian pelanggan?
+2. Produk apa saja yang sering dibeli bersama oleh pelanggan dan bagaimana hal ini dapat dimanfaatkan untuk meningkatkan penjualan?
+3. Apakah ada segmen pelanggan dengan karakteristik unik yang dapat dijadikan target pemasaran khusus?
+4. Bagaimana supermarket dapat mempersonalisasi penawaran produk untuk meningkatkan loyalitas pelanggan?
 
-## Analysis and Visualizations
+## Tujuan Analisis
 
-In this project, I conducted several analyses and visualizations to understand different aspects of the data:
+1. Mengidentifikasi distribusi usia dan pendapatan pelanggan untuk memahami demografi utama yang dilayani oleh supermarket.
+2. Menganalisis korelasi antara pembelian berbagai produk untuk mengembangkan strategi bundling dan cross-selling.
+3. Mengungkap segmen pelanggan unik yang mungkin belum dieksplorasi secara optimal oleh strategi pemasaran saat ini.
+4. Memberikan rekomendasi untuk personalisasi penawaran produk berdasarkan analisis perilaku pembelian.
 
-1. **Tap-In Time Distribution**: Analysis of the distribution of tap-in times throughout the day, identifying peak hours and off-peak times.
-  
-2. **Comparison of Tap-In and Tap-Out by Location**: Visualization comparing the locations where customers tap in and tap out, providing insights into popular routes and stops.
-  
-3. **Average Payment Amount by Gender**: Analysis of the average amount paid by gender, exploring any potential differences in payment behavior.
-  
-4. **Transaction Frequency by Age**: Visualization of transaction frequency based on customer age, providing insights into the demographics of the users.
+## Deskripsi Proyek
 
-## Key Findings
+Proyek ini melibatkan berbagai tahapan analisis, termasuk:
+1. **Pembersihan Data**: Mengatasi nilai yang hilang dan menghapus duplikasi data untuk memastikan integritas data.
+2. **Visualisasi Data**: Menganalisis distribusi usia pelanggan, pendapatan, dan atribut lainnya menggunakan histogram, grafik batang, dan peta korelasi.
+3. **Analisis Demografi**: Mengidentifikasi pola dalam demografi pelanggan seperti distribusi usia, pendapatan, dan komposisi keluarga.
+4. **Analisis Produk**: Menganalisis preferensi pembelian produk untuk berbagai kategori seperti daging, ikan, anggur, dan produk emas.
+5. **Strategi Bisnis**: Memberikan rekomendasi strategis untuk pemasaran yang lebih tepat sasaran berdasarkan temuan analisis.
 
-- **Peak Hours**: The highest concentration of tap-ins occurred during morning and evening rush hours.
-- **Popular Routes**: Certain routes and stops were more frequently used, indicating higher traffic areas.
-- **Gender Differences**: There was a noticeable difference in the average payment amounts between genders.
-- **Age Distribution**: Younger customers tended to use the service more frequently than older age groups.
+## Hasil Analisis
 
-## Tools and Technologies
+- **Distribusi Usia Pelanggan**: Mayoritas pelanggan berada dalam rentang usia 40-65 tahun, dengan puncak pada usia sekitar 50 tahun.
+- **Distribusi Pendapatan**: Analisis menunjukkan variasi pendapatan yang cukup signifikan di antara pelanggan, dengan beberapa segmen memiliki pendapatan yang sangat tinggi.
+- **Preferensi Produk**: Pelanggan cenderung membeli daging, ikan, dan anggur bersama-sama, sementara produk emas cenderung dibeli secara terpisah.
 
-- **Google Colab**: For coding and data analysis.
-- **Pandas & NumPy**: For data manipulation and analysis.
-- **Matplotlib & Seaborn**: For data visualization.
-- **GitHub**: For version control and project sharing.
+## Rekomendasi
 
-## How to Run
+1. **Strategi Pemasaran**: Fokus pada pelanggan dengan usia 40-65 tahun dan menawarkan bundling produk yang sering dibeli bersama.
+2. **Pengembangan Produk**: Mempromosikan produk emas secara terpisah dan menargetkan pelanggan dengan pendapatan tinggi.
+3. **Personalisasi Penawaran**: Menggunakan data untuk memberikan rekomendasi produk yang dipersonalisasi berdasarkan perilaku pembelian sebelumnya.
+4. **Analisis Lanjutan**: Melakukan clustering untuk mengidentifikasi kelompok pelanggan yang berbeda dan menggunakan model prediktif untuk kampanye pemasaran yang lebih efektif.
 
-To replicate the analysis:
-1. Clone this repository.
-2. Open the Jupyter Notebook file in Google Colab.
-3. Follow the instructions within the notebook to load the dataset and execute the analysis.
+Dengan implementasi strategi ini, diharapkan dapat meningkatkan kepuasan pelanggan dan memaksimalkan keuntungan.
+
+## Cara Menggunakan
+
+1. Clone repository ini ke lokal Anda.
+2. Buka dan jalankan notebook Jupyter untuk melihat proses analisis lengkap.
+3. Modifikasi dan eksplorasi data sesuai dengan kebutuhan analisis lebih lanjut.
+
+## Teknologi yang Digunakan
+
+- **Python**: Untuk analisis data dan visualisasi.
+- **Pandas & NumPy**: Untuk manipulasi data.
+- **Matplotlib & Seaborn**: Untuk visualisasi data.
+- **Scikit-learn**: Untuk analisis clustering dan prediktif.
